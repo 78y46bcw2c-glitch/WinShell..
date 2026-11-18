@@ -12,6 +12,9 @@ jobs:
       - name: Check out code
         uses: actions/checkout@v4
 
+      - name: Unzip project
+        run: unzip -oq WinShell-project.zip
+
       - name: Install XcodeGen
         run: brew install xcodegen
 
